@@ -1,0 +1,55 @@
+# создание объявления
+POST http://127.0.0.1:5000/adverts/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "header": "Car 1 for sale",
+  "description": "new",
+  "creation_date": "10.12.2022",
+  "owner": "1"
+}
+
+###
+
+POST http://127.0.0.1:5000/adverts/
+Content-Type: application/json
+
+{
+  "id": 2,
+  "header": "Car 2 for sale",
+  "description": "new",
+  "creation_date": "20.12.2022",
+  "owner": "2"
+}
+
+###
+
+POST http://127.0.0.1:5000/adverts/
+Content-Type: application/json
+
+{
+  "id": 3,
+  "header": "Car 3 for sale",
+  "description": "used",
+  "creation_date": "30.12.2022",
+  "owner": "3"
+}
+
+###
+
+# получение объявления
+GET http://127.0.0.1:5000/adverts/3/
+Content-Type: application/json
+
+###
+
+# удаление объявления
+DELETE http://127.0.0.1:5000/adverts/
+Content-Type: application/json
+
+{
+  "id": 3
+}
+
+###
